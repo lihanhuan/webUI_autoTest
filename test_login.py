@@ -14,7 +14,7 @@ class LoginTest(unittest.TestCase):
 
     def test_login(self):
         u'''测试登录用例，账号：xx 密码xx'''
-        ele_name = self.driver.find_element_by_xpath('userName')
+        ele_name = self.driver.find_element_by_name('userName')
         ele_name.send_keys('18410078814')
         ele_pwd = self.driver.find_element_by_name('password')
         ele_pwd.send_keys("123456")
